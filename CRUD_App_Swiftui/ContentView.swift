@@ -1,9 +1,3 @@
-//
-//  ContentView.swift
-//  CRUD_App_Swiftui
-//
-//  Created by Naznin on 07/08/25.
-//
 
 import SwiftUI
 
