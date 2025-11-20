@@ -13,12 +13,14 @@ struct ContentView: View {
             .fontWeight(.heavy)
             .padding()
         
+        // field to type new item
         TextField("Add items",text:$items)
             .shadow(color: Color.brown, radius:5)
             .padding()
             .overlay(RoundedRectangle(cornerRadius: 25).stroke(Color.brown,lineWidth: 4))
             .padding()
     HStack{
+        // add button
         Image(systemName: "plus")
         Button("ADD"){
             if !items .isEmpty{
@@ -38,7 +40,9 @@ struct ContentView: View {
             .font(.headline)
             .fontWeight(.heavy)
             .padding()
-            
+        
+            //list the items
+        
         List{
         ForEach(list.indices, id: \.self){
                 index in
